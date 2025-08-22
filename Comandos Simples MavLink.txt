@@ -1,0 +1,16 @@
+source ~/venv-mavproxy/bin/activate   
+
+source ~/mavproxy-venv/bin/activate   
+
+
+mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600 --out 192.168.15.6:14550 --aircraft MyCopter
+
+
+
+loiter
+
+arm throttle
+
+takeoff 1
+
+land
